@@ -1,0 +1,42 @@
+{
+  "name": "piefile",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A sleek, browser-based peer-to-peer file sharing and transfer tool inspired by FilePizza.",
+  "homepage": "https://piefile.netlify.app",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "p2p",
+    "webrtc",
+    "file-transfer",
+    "file-sharing",
+    "peer-to-peer",
+    "browser-to-browser",
+    "react",
+    "vite",
+    "filepizza",
+    "zero-knowledge",
+    "decentralized"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "lucide-react": "^1.59.0",
+    "qrcode": "^1.5.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "vite": "^8.3.0"
+  }
+}
