@@ -142,7 +142,7 @@ PieFile/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/PieFile.git
+git clone https://github.com/shafayat83/PieFile.git
 cd PieFile
 ```
 
