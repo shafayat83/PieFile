@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <!-- Outer Golden Crust Gradient -->
+    <linearGradient id="crustGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#E26D2D" />
+      <stop offset="100%" stop-color="#92400E" />
+    </linearGradient>
+
+    <!-- Melted Golden Cheese Gradient -->
+    <linearGradient id="cheeseGradient" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="40%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <!-- Pepperoni Gradient -->
+    <radialGradient id="pepGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#EF4444" />
+      <stop offset="65%" stop-color="#DC2626" />
+      <stop offset="100%" stop-color="#991B1B" />
+    </radialGradient>
+
+    <!-- Basil Gradient -->
+    <linearGradient id="basilLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4ADE80" />
+      <stop offset="100%" stop-color="#15803D" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="pieGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#E26D2D" flood-opacity="0.45" />
+    </filter>
+
+    <filter id="arrowShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <g filter="url(#pieGlow)">
+    <!-- Thick Outer Pie Crust (Arc & Wedge) -->
+    <path d="M64 10 L118 100 C98 116 78 122 64 122 C50 122 30 116 10 100 Z" fill="url(#crustGradient)" />
+    
+    <!-- Crust Inner Ridge -->
+    <path d="M64 18 L112 96 C96 110 77 116 64 116 C51 116 32 110 16 96 Z" fill="#92400E" opacity="0.45" />
+
+    <!-- Melted Cheese Surface -->
+    <path d="M64 24 L106 92 C92 105 75 110 64 110 C53 110 36 105 22 92 Z" fill="url(#cheeseGradient)" />
+  </g>
+
+  <!-- Pepperoni Slices -->
+  <!-- Top Left Pepperoni -->
+  <circle cx="50" cy="62" r="13" fill="url(#pepGrad)" stroke="#7F1D1D" stroke-width="1.5" />
+  <circle cx="47" cy="58" r="1.5" fill="#FEF2F2" opacity="0.6" />
+  <circle cx="55" cy="65" r="1.2" fill="#450A0A" />
+
+  <!-- Bottom Right Pepperoni -->
+  <circle cx="78" cy="82" r="14" fill="url(#pepGrad)" stroke="#7F1D1D" stroke-width="1.5" />
+  <circle cx="74" cy="78" r="1.8" fill="#FEF2F2" opacity="0.6" />
+  <circle cx="83" cy="86" r="1.4" fill="#450A0A" />
+
+  <!-- Black Olive Slice -->
+  <circle cx="76" cy="52" r="6" fill="#18181B" stroke="#27272A" stroke-width="1.5" />
+  <circle cx="76" cy="52" r="2.5" fill="#F59E0B" />
+
+  <!-- Fresh Basil Leaf -->
+  <path d="M42 84 C38 74 48 68 56 73 C60 81 50 89 42 84 Z" fill="url(#basilLeaf)" stroke="#14532D" stroke-width="1" />
+  <path d="M44 82 Q49 77 53 74" stroke="#86EFAC" stroke-width="0.8" fill="none" opacity="0.7" />
+
+  <!-- Baked Cheese Specks -->
+  <circle cx="64" cy="45" r="2" fill="#B45309" opacity="0.7" />
+  <circle cx="36" cy="78" r="2.2" fill="#B45309" opacity="0.6" />
+  <circle cx="64" cy="98" r="2.5" fill="#B45309" opacity="0.7" />
+
+  <!-- Friendly Prominent Upload Arrow Crown -->
+  <g filter="url(#arrowShadow)">
+    <circle cx="64" cy="44" r="19" fill="#18181B" stroke="#E26D2D" stroke-width="2.5" />
+    <circle cx="64" cy="44" r="15" fill="#E26D2D" />
+    <!-- White Upward Arrow -->
+    <path d="M64 53 L64 35 M57 42 L64 35 L71 42" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+</svg>
